@@ -11,7 +11,7 @@ const [caption, setCaption] = useState("");
     formData.append("image", image);
     formData.append("caption", caption);
 
-    const response = await axios.post('http://localhost:5000/api/images', formData);
+    const response = await axios.post('https://backend-nu-lyart-11.vercel.app//api/images', formData);
     onUpload(response.data);
     setCaption('');
     setImage(null);
